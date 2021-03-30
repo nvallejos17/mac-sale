@@ -1,7 +1,14 @@
 import React from 'react';
+import { Navbar } from 'react-bootstrap';
 
 const App = () => {
-  return <div>Hello, world!</div>;
+  return (
+    <>
+      <Navbar>
+        <Navbar.Brand>Macbook Air</Navbar.Brand>
+      </Navbar>
+    </>
+  );
 };
 
 export default App;
