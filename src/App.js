@@ -1,12 +1,10 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
+import MainNav from './components/MainNav/MainNav.component';
 
 const App = () => {
   return (
     <>
-      <Navbar bg='primary' variant='dark'>
-        <Navbar.Brand>Macbook Air</Navbar.Brand>
-      </Navbar>
+      <MainNav />
     </>
   );
 };
