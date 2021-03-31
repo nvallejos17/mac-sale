@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+import PriceItem from '../PriceItem/PriceItem.component';
 
 const Price = () => {
   const priceItems = [
@@ -11,11 +12,7 @@ const Price = () => {
   return (
     <Container>
       {priceItems.map(({ cur, val }) => (
-        <div key={cur}>
-          <p>
-            <strong>{cur.toUpperCase()}</strong> {val.toFixed(2)}
-          </p>
-        </div>
+        <PriceItem key={cur} cur={cur} val={val} />
       ))}
     </Container>
   );
