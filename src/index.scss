@@ -12,4 +12,14 @@ code {
     monospace;
 }
 
+// Bootswatch variables
+@import './theme/variables';
+
+// Custom
+$primary: #cca998;
+
+// Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Bootswatch
+@import './theme/bootswatch';

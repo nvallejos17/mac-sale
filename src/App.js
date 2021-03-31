@@ -4,7 +4,7 @@ import { Navbar } from 'react-bootstrap';
 const App = () => {
   return (
     <>
-      <Navbar>
+      <Navbar bg='primary' variant='dark'>
         <Navbar.Brand>Macbook Air</Navbar.Brand>
       </Navbar>
     </>
