@@ -1,6 +1,6 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import PriceItem from '../PriceItem/PriceItem.component';
+import { PriceItemsContainer, PriceWrapper } from './Price.styled';
 
 const Price = () => {
   const priceItems = [
@@ -10,11 +10,13 @@ const Price = () => {
   ];
 
   return (
-    <Container>
-      {priceItems.map(({ cur, val }) => (
-        <PriceItem key={cur} cur={cur} val={val} />
-      ))}
-    </Container>
+    <PriceWrapper>
+      <PriceItemsContainer>
+        {priceItems.map(({ cur, val }) => (
+          <PriceItem key={cur} cur={cur} val={val} />
+        ))}
+      </PriceItemsContainer>
+    </PriceWrapper>
   );
 };
 
