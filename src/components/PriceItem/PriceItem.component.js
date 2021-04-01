@@ -1,12 +1,19 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
+import {
+  PriceItemCurrency,
+  PriceItemValue,
+  PriceItemWrapper,
+} from './PriceItem.styled';
 
 const PriceItem = ({ cur, val }) => {
   return (
-    <div>
-      <p>
-        <strong>{cur.toUpperCase()}</strong> {val.toFixed(2)}
-      </p>
-    </div>
+    <Card border='primary'>
+      <PriceItemWrapper>
+        <PriceItemCurrency>{cur.toUpperCase()}</PriceItemCurrency>
+        <PriceItemValue>{val.toFixed(2)}</PriceItemValue>
+      </PriceItemWrapper>
+    </Card>
   );
 };
 
