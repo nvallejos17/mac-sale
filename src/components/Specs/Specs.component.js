@@ -116,6 +116,8 @@ const Specs = () => {
             </li>
           </ul>
 
+          <br />
+
           <p>
             <strong>Salida de video digital Thunderbolt 3</strong>
           </p>
@@ -157,6 +159,8 @@ const Specs = () => {
             <li>Conexión inalámbrica Wi-Fi 802.11ac</li>
             <li>Compatible con IEEE 802.11a/b/g/n</li>
           </ul>
+
+          <br />
 
           <p>
             <strong>Bluetooth</strong>
@@ -263,6 +267,8 @@ const Specs = () => {
               Más información
             </a>
           </p>
+
+          <br />
 
           <p>
             <strong>Funcionalidades incluidas:</strong>

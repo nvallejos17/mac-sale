@@ -1,11 +1,14 @@
 import React from 'react';
+import { SpecItemCol, SpecItemRow, SpecItemTitle } from './SpecItem.styled';
 
 const SpecItem = ({ title, children }) => {
   return (
-    <>
-      <h3>{title}</h3>
-      {children}
-    </>
+    <SpecItemRow noGutters>
+      <SpecItemCol md={4}>
+        <SpecItemTitle>{title}</SpecItemTitle>
+      </SpecItemCol>
+      <SpecItemCol>{children}</SpecItemCol>
+    </SpecItemRow>
   );
 };
 
