@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const MainNav = () => {
   return (
-    <Navbar bg='primary' variant='dark'>
+    <Navbar bg='dark' variant='dark' sticky='top'>
       <Navbar.Brand>MacBook Air</Navbar.Brand>
     </Navbar>
   );

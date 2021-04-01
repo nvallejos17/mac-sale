@@ -15,7 +15,9 @@ const Specs = () => {
         <h3>Pantalla</h3>
 
         <ul>
-          <li>Pantalla Retina</li>
+          <li>
+            <strong>Pantalla Retina</strong>
+          </li>
           <li>
             Pantalla de 13.3 pulgadas (diagonal) retroiluminada por LED con
             tecnología IPS; resolución nativa de 2560 x 1600 a 227 pixeles por
@@ -73,10 +75,18 @@ const Specs = () => {
         <h3>Tamaño y peso</h3>
 
         <ul>
-          <li>Grosor: 0.41 a 1.56 cm</li>
-          <li>Ancho: 30.41 cm</li>
-          <li>Profundidad: 21.24 cm</li>
-          <li>Peso: 1.25 kg</li>
+          <li>
+            <b>Grosor:</b> 0.41 a 1.56 cm
+          </li>
+          <li>
+            <b>Ancho:</b> 30.41 cm
+          </li>
+          <li>
+            <b>Profundidad:</b> 21.24 cm
+          </li>
+          <li>
+            <b>Peso:</b> 1.25 kg
+          </li>
         </ul>
 
         <h3>Gráficos</h3>
@@ -92,8 +102,10 @@ const Specs = () => {
         <h3>Compatibilidad con video</h3>
 
         <p>
-          Es compatible simultáneamente con la resolución nativa de la pantalla
-          integrada en millones de colores y:
+          <strong>
+            Es compatible simultáneamente con la resolución nativa de la
+            pantalla integrada en millones de colores y:
+          </strong>
         </p>
 
         <ul>
@@ -104,7 +116,9 @@ const Specs = () => {
           </li>
         </ul>
 
-        <p>Salida de video digital Thunderbolt 3</p>
+        <p>
+          <strong>Salida de video digital Thunderbolt 3</strong>
+        </p>
 
         <ul>
           <li>Salida DisplayPort nativa a través de USB‑C</li>
@@ -122,7 +136,9 @@ const Specs = () => {
 
         <h3>Carga y expansión</h3>
 
-        <p>Dos puertos Thunderbolt 3 (USB-C) compatibles con:</p>
+        <p>
+          <strong>Dos puertos Thunderbolt 3 (USB-C) compatibles con:</strong>
+        </p>
 
         <ul>
           <li>Carga</li>
@@ -133,11 +149,20 @@ const Specs = () => {
 
         <h3>Conexión inalámbrica</h3>
 
+        <p>
+          <strong>Wi-Fi</strong>
+        </p>
+
         <ul>
-          <li>
-            Conexión inalámbrica Wi-Fi 802.11ac; Compatible con IEEE
-            802.11a/b/g/n
-          </li>
+          <li>Conexión inalámbrica Wi-Fi 802.11ac</li>
+          <li>Compatible con IEEE 802.11a/b/g/n</li>
+        </ul>
+
+        <p>
+          <strong>Bluetooth</strong>
+        </p>
+
+        <ul>
           <li>Tecnología inalámbrica Bluetooth 4.2</li>
         </ul>
 
@@ -151,47 +176,65 @@ const Specs = () => {
 
         <h3>Teclado y trackpad</h3>
 
+        <p>
+          <strong>Teclado de tamaño completo con:</strong>
+        </p>
+
         <ul>
           <li>
-            <b>Teclado de tamaño completo con:</b>
-
-            <ul>
-              <li>
-                78 (EE.UU.) teclas retroiluminadas por LED individuales,
-                incluidas 12 teclas de función y 4 teclas de flecha
-              </li>
-              <li>Sensor de luz ambiental</li>
-              <li>
-                Trackpad Force Touch con control preciso del cursor y
-                sensibilidad a la presión. Permite clics fuertes, aceleradores,
-                trazos sensibles a la presión y gestos Multi‑Touch
-              </li>
-            </ul>
+            78 (EE.UU.) teclas retroiluminadas por LED individuales, incluidas
+            12 teclas de función y 4 teclas de flecha
+          </li>
+          <li>Sensor de luz ambiental</li>
+          <li>
+            Trackpad Force Touch con control preciso del cursor y sensibilidad a
+            la presión. Permite clics fuertes, aceleradores, trazos sensibles a
+            la presión y gestos Multi‑Touch
           </li>
         </ul>
 
         <h3>Requisitos eléctricos y operativos</h3>
 
         <ul>
-          <li>Tensión eléctrica: 100-240 V CA</li>
-          <li>Frecuencia: 50 a 60 Hz</li>
-          <li>Temperatura operativa: 10 a 35 ºC</li>
-          <li>Temperatura de almacenamiento: –25 a 45 °C</li>
-          <li>Humedad relativa: 0% a 90% sin condensación</li>
-          <li>Altitud de funcionamiento: probada hasta 3,000 m</li>
-          <li>Altitud máxima de almacenamiento: 4,500 m</li>
-          <li>Altitud máxima de transporte: 10,500 m</li>
+          <li>
+            <b>Tensión eléctrica:</b> 100-240 V CA
+          </li>
+          <li>
+            <b>Frecuencia:</b> 50 a 60 Hz
+          </li>
+          <li>
+            <b>Temperatura operativa:</b> 10 a 35 ºC
+          </li>
+          <li>
+            <b>Temperatura de almacenamiento:</b> –25 a 45 °C
+          </li>
+          <li>
+            <b>Humedad relativa:</b> 0% a 90% sin condensación
+          </li>
+          <li>
+            <b>Altitud de funcionamiento:</b> probada hasta 3,000 m
+          </li>
+          <li>
+            <b>Altitud máxima de almacenamiento:</b> 4,500 m
+          </li>
+          <li>
+            <b>Altitud máxima de transporte:</b> 10,500 m
+          </li>
         </ul>
 
         <h3>Sistema operativo</h3>
 
         <p>
-          <b>macOS</b>
-          <br />
+          <strong>macOS</strong>
+        </p>
+
+        <p>
           Detrás de cada Mac está la potencia de macOS, su sistema operativo.
           macOS Catalina tiene todo lo que te encanta de tu Mac y mucho más,
           para que puedas hacer más cosas, y mejor.
-          <br />
+        </p>
+
+        <p>
           <a
             href='https://www.apple.com/la/macos/big-sur/'
             target='_blank'
@@ -208,6 +251,9 @@ const Specs = () => {
           discapacidad a aprovechar al máximo su nueva MacBook Air. Gracias al
           soporte integrado para visión, audición, motricidad y aprendizaje,
           crear y hacer cosas asombrosas está al alcance de todos.
+        </p>
+
+        <p>
           <a
             href='https://www.apple.com/la/accessibility/'
             target='_blank'
@@ -217,7 +263,9 @@ const Specs = () => {
           </a>
         </p>
 
-        <p>Funcionalidades incluidas:</p>
+        <p>
+          <strong>Funcionalidades incluidas:</strong>
+        </p>
 
         <ul>
           <li>Control por Voz​</li>
