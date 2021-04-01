@@ -48,31 +48,19 @@ const Specs = () => {
           </li>
         </ul>
 
-        <h3>
-          Almacenamiento<sup>1</sup>
-        </h3>
+        <h3>Almacenamiento</h3>
 
         <ul>
-          <li>
-            SSD basado en PCIe de 128 GB
-            <br />
-            <em>Configurable con SSD de 256 GB, 512 GB o 1 TB</em>
-          </li>
+          <li>SSD basado en PCIe de 128 GB</li>
         </ul>
 
         <h3>Memoria</h3>
 
         <ul>
-          <li>
-            8 GB de memoria LPDDR3 de 2133 MHz integrada
-            <br />
-            <em>Configurable con 16 GB de memoria</em>
-          </li>
+          <li>8 GB de memoria LPDDR3 de 2133 MHz integrada</li>
         </ul>
 
-        <h3>
-          Batería y energía<sup>2</sup>
-        </h3>
+        <h3>Batería y energía</h3>
 
         <ul>
           <li>Hasta 12 horas de navegación web inalámbrica</li>
@@ -88,9 +76,7 @@ const Specs = () => {
           <li>Grosor: 0.41 a 1.56 cm</li>
           <li>Ancho: 30.41 cm</li>
           <li>Profundidad: 21.24 cm</li>
-          <li>
-            Peso: 1.25 kg<sup>3</sup>
-          </li>
+          <li>Peso: 1.25 kg</li>
         </ul>
 
         <h3>Gráficos</h3>
@@ -207,10 +193,11 @@ const Specs = () => {
           para que puedas hacer más cosas, y mejor.
           <br />
           <a
-            href='https://support.apple.com/es-mx/macos'
-            onclick='s_objectID="https://support.apple.com/es-mx/macos_1";return this.s_oc?this.s_oc(e):true'
+            href='https://www.apple.com/la/macos/big-sur/'
+            target='_blank'
+            rel='noreferrer'
           >
-            Más información -&nbsp;Sistema operativo
+            Más información
           </a>
         </p>
 
@@ -220,12 +207,13 @@ const Specs = () => {
           Las funcionalidades de accesibilidad ayudan a las personas con alguna
           discapacidad a aprovechar al máximo su nueva MacBook Air. Gracias al
           soporte integrado para visión, audición, motricidad y aprendizaje,
-          crear y hacer cosas asombrosas está al alcance de todos.{' '}
+          crear y hacer cosas asombrosas está al alcance de todos.
           <a
-            href='https://www.apple.com/mx/accessibility/mac/'
-            onclick='s_objectID="https://www.apple.com/mx/accessibility/mac/_1";return this.s_oc?this.s_oc(e):true'
+            href='https://www.apple.com/la/accessibility/'
+            target='_blank'
+            rel='noreferrer'
           >
-            Más información -&nbsp;Accesibilidad
+            Más información
           </a>
         </p>
 
@@ -241,42 +229,6 @@ const Specs = () => {
           <li>Control por Botón</li>
           <li>Subtítulos opcionales</li>
           <li>Texto a Voz</li>
-        </ul>
-
-        <h3>
-          Apps integradas<sup>4</sup>
-        </h3>
-
-        <ul>
-          <li>Fotos</li>
-          <li>iMovie</li>
-          <li>GarageBand</li>
-          <li>Pages</li>
-          <li>Numbers</li>
-          <li>Keynote</li>
-          <li>Siri</li>
-          <li>Safari</li>
-          <li>Mail</li>
-          <li>FaceTime</li>
-          <li>Mensajes</li>
-          <li>Mapas</li>
-          <li>Bolsa</li>
-          <li>Casa</li>
-          <li>Notas de Voz</li>
-          <li>Notas</li>
-          <li>Calendario</li>
-          <li>Contactos</li>
-          <li>Recordatorios</li>
-          <li>Photo Booth</li>
-          <li>Vista Previa</li>
-          <li>Libros</li>
-          <li>App Store</li>
-          <li>Time Machine</li>
-          <li>TV</li>
-          <li>Música</li>
-          <li>Podcasts</li>
-          <li>Dónde Está</li>
-          <li>QuickTime Player</li>
         </ul>
 
         <h3>En la caja</h3>
