@@ -1,7 +1,11 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
-import { GalleryWrapper, GalleryContainer } from './Gallery.styled';
+import {
+  GalleryWrapper,
+  GalleryContainer,
+  GalleryCarousel,
+} from './Gallery.styled';
 
 const Gallery = () => {
   const images = ['img/01-min.jpeg', 'img/02-min.jpeg'];
@@ -9,13 +13,13 @@ const Gallery = () => {
   return (
     <GalleryWrapper>
       <GalleryContainer>
-        <Carousel fade>
+        <GalleryCarousel fade>
           {images.map((img) => (
             <Carousel.Item key={img}>
               <Image src={img} fluid />
             </Carousel.Item>
           ))}
-        </Carousel>
+        </GalleryCarousel>
       </GalleryContainer>
     </GalleryWrapper>
   );
