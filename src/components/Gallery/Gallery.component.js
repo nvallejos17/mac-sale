@@ -4,7 +4,7 @@ import Image from 'react-bootstrap/Image';
 import { GalleryContainer } from './Gallery.styled';
 
 const Gallery = () => {
-  const images = ['/img/01-min.jpeg', '/img/02-min.jpeg'];
+  const images = ['img/01-min.jpeg', 'img/02-min.jpeg'];
 
   return (
     <GalleryContainer>

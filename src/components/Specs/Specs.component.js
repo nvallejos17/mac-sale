@@ -293,6 +293,10 @@ const Specs = () => {
             <li>Adaptador de corriente USB-C de 30 W</li>
             <li>Cable de carga USB-C (2 m)</li>
           </ul>
+
+          <br />
+
+          <img src='img/in-the-box.png' alt='in-the-box.png' />
         </SpecItem>
       </Container>
     </SpecsWrapper>
