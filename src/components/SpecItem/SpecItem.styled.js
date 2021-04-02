@@ -10,7 +10,6 @@ export const SpecItemRow = styled(Row)(
       padding: 0;
     }
 
-    margin-bottom: ${hasWrapped ? '1rem' : 0};
     padding: ${hasWrapped ? 0 : '2rem 0'};
 
     line-height: 2;
