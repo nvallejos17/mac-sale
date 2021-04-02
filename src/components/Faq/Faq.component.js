@@ -2,7 +2,6 @@ import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import FaqItem from '../FaqItem/FaqItem.component';
 import Section from '../Section/Section.component';
-import { FaqWrapper, FaqContainer } from './Faq.styled';
 
 const Faq = () => {
   const faqItems = [
