@@ -16,7 +16,9 @@ const SpecItem = ({ title, children }) => {
   return (
     <SpecItemRow noGutters hasWrapped={hasWrapped}>
       <SpecItemTitle md={4} hasWrapped={hasWrapped}>
-        <h4>{title}</h4>
+        <p>
+          <strong>{title}</strong>
+        </p>
       </SpecItemTitle>
       <SpecItemContent hasWrapped={hasWrapped}>{children}</SpecItemContent>
     </SpecItemRow>
