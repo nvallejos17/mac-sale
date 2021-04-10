@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import {
   PriceWrapper,
   PriceItem,
@@ -6,25 +7,43 @@ import {
   PriceItemValue,
 } from './Price.styled';
 
-const Price = () => {
-  const usd = 900;
-  const ars = usd * 145;
-  const dai = usd / 1.04;
+const Price = ({ usd = 900 }) => {
+  const [ars, setArs] = useState(null);
+  const [dai, setDai] = useState(null);
 
-  const priceItems = [
-    { cur: 'usd', val: usd },
-    { cur: 'ars', val: ars },
-    { cur: 'dai', val: dai },
-  ];
+  useEffect(() => {
+    axios
+      .get('https://be.buenbit.com/api/market/tickers/')
+      .then((res) => {
+        const {
+          object: { daiars, daiusd },
+        } = res.data;
+
+        setArs(usd * (daiars.selling_price / daiusd.purchase_price));
+        setDai(usd / daiusd.purchase_price);
+      })
+      .catch(() => {
+        setArs(null);
+        setDai(null);
+      });
+  }, [usd]);
 
   return (
     <PriceWrapper>
-      {priceItems.map(({ cur, val }, index) => (
-        <PriceItem key={index}>
-          <PriceItemLabel>{cur.toUpperCase()}</PriceItemLabel>{' '}
-          <PriceItemValue>{val.toFixed(2)}</PriceItemValue>
-        </PriceItem>
-      ))}
+      <PriceItem>
+        <PriceItemLabel>USD</PriceItemLabel>{' '}
+        <PriceItemValue>{usd.toFixed(0)}</PriceItemValue>
+      </PriceItem>
+
+      <PriceItem>
+        <PriceItemLabel>ARS</PriceItemLabel>{' '}
+        <PriceItemValue>{ars?.toFixed(0) || '-'}</PriceItemValue>
+      </PriceItem>
+
+      <PriceItem>
+        <PriceItemLabel>DAI</PriceItemLabel>{' '}
+        <PriceItemValue>{dai?.toFixed(2) || '-'}</PriceItemValue>
+      </PriceItem>
     </PriceWrapper>
   );
 };
