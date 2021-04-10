@@ -18,6 +18,10 @@ export const SpecItemRow = styled(Row)(
 
     &:first-of-type {
       padding-top: 0;
+
+      ${SpecItemTitle} {
+        padding-top: 0;
+      }
     }
 
     &:last-child {

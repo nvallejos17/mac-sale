@@ -21,8 +21,8 @@ const Price = () => {
     <PriceWrapper>
       {priceItems.map(({ cur, val }, index) => (
         <PriceItem key={index}>
-          <PriceItemLabel>{cur.toUpperCase()}</PriceItemLabel>
-          <PriceItemValue>{val.toFixed(0)}</PriceItemValue>
+          <PriceItemLabel>{cur.toUpperCase()}</PriceItemLabel>{' '}
+          <PriceItemValue>{val.toFixed(2)}</PriceItemValue>
         </PriceItem>
       ))}
     </PriceWrapper>

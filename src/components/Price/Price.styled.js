@@ -1,9 +1,37 @@
 import styled from 'styled-components';
 
-export const PriceWrapper = styled.ul``;
+export const PriceWrapper = styled.ul`
+  margin: 0;
+  padding: 0;
 
-export const PriceItem = styled.li``;
+  display: flex;
 
-export const PriceItemLabel = styled.label``;
+  list-style-type: none;
 
-export const PriceItemValue = styled.span``;
+  /* Mobile only */
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+`;
+
+export const PriceItem = styled.li`
+  margin-right: 1rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  /* Mobile only */
+  @media (max-width: 576px) {
+    margin-right: 0;
+    font-size: 0.75rem;
+  }
+`;
+
+export const PriceItemLabel = styled.span`
+  font-weight: bold;
+`;
+
+export const PriceItemValue = styled.span`
+  color: lightgrey;
+`;
