@@ -2,6 +2,9 @@ import React from 'react';
 import Section from '../Section/Section.component';
 import SpecItem from '../SpecItem/SpecItem.component';
 
+// Images
+import inTheBox from '../../img/in-the-box.png';
+
 const Specs = () => {
   return (
     <Section title='Especificaciones técnicas'>
@@ -293,7 +296,7 @@ const Specs = () => {
 
         <br />
 
-        <img src='img/in-the-box.png' alt='in-the-box.png' />
+        <img src={inTheBox} alt={inTheBox} />
       </SpecItem>
     </Section>
   );
