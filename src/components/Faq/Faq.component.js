@@ -22,10 +22,10 @@ const Faq = () => {
   ];
 
   return (
-    <Section title='Preguntas frecuentes'>
+    <Section title='FAQ'>
       <Accordion>
         {faqItems.map(({ header, body }, index) => (
-          <FaqItem header={header} eventKey={index.toString()}>
+          <FaqItem key={index} header={header} eventKey={index.toString()}>
             {body}
           </FaqItem>
         ))}

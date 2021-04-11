@@ -7,7 +7,7 @@ import inTheBox from '../../img/in-the-box.png';
 
 const Specs = () => {
   return (
-    <Section title='Especificaciones técnicas'>
+    <Section title='Especificaciones'>
       <SpecItem title='Acabado'>
         <ul>
           <li>Color oro</li>
