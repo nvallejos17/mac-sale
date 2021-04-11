@@ -13,7 +13,7 @@ const TopButton = () => {
 
   return (
     scrollY > 78 && (
-      <TopButtonWrapper onClick={() => scroll.scrollToTop()}>
+      <TopButtonWrapper onClick={() => scroll.scrollToTop()} variant='dark'>
         <i className='fas fa-chevron-up'></i>
       </TopButtonWrapper>
     )
