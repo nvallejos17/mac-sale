@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import {
   PriceWrapper,
   PriceItem,
@@ -7,28 +8,36 @@ import {
 } from './Price.styled';
 
 const Price = ({ usd = 900 }) => {
-  const [ars, setArs] = useState(null);
-  const [dai, setDai] = useState(null);
+  const [daiArs, setDaiArs] = useState(null);
+  const [daiUsd, setDaiUsd] = useState(null);
 
   useEffect(() => {
-    fetch('https://be.buenbit.com/api/market/tickers/', {
-      mode: 'cors',
-      method: 'GET',
-      cache: 'no-cache',
-    })
-      .then((res) => res.json())
-      .then((json) => {
-        const {
-          object: { daiars, daiusd },
-        } = json;
-        setArs(usd * (daiars.selling_price / daiusd.purchase_price));
-        setDai(usd / daiusd.purchase_price);
+    axios
+      .get('https://criptoya.com/api/buenbit/dai/ars')
+      .then((res) => {
+        const { bid: purchase_price, ask: selling_price } = res.data;
+        setDaiArs({ purchase_price, selling_price });
       })
-      .catch(() => {
-        setArs(null);
-        setDai(null);
-      });
-  }, [usd]);
+      .catch(() => setDaiArs(null));
+
+    axios
+      .get('https://criptoya.com/api/buenbit/dai/usd')
+      .then((res) => {
+        const { bid: purchase_price, ask: selling_price } = res.data;
+        setDaiUsd({ purchase_price, selling_price });
+      })
+      .catch(() => setDaiUsd(null));
+  }, []);
+
+  const [usdPriceArs, setUsdPriceArs] = useState(null);
+  const [usdPriceDai, setUsdPriceDai] = useState(null);
+
+  useEffect(() => {
+    setUsdPriceArs(
+      daiArs && daiUsd ? daiArs.selling_price / daiUsd.purchase_price : null
+    );
+    setUsdPriceDai(daiUsd ? 1 / daiUsd.purchase_price : null);
+  }, [daiArs, daiUsd]);
 
   return (
     <PriceWrapper>
@@ -39,12 +48,16 @@ const Price = ({ usd = 900 }) => {
 
       <PriceItem>
         <PriceItemLabel>ARS</PriceItemLabel>{' '}
-        <PriceItemValue>{ars?.toFixed(0) || '-'}</PriceItemValue>
+        <PriceItemValue>
+          {usdPriceArs ? (usd * usdPriceArs).toFixed(2) : '-'}
+        </PriceItemValue>
       </PriceItem>
 
       <PriceItem>
         <PriceItemLabel>DAI</PriceItemLabel>{' '}
-        <PriceItemValue>{dai?.toFixed(2) || '-'}</PriceItemValue>
+        <PriceItemValue>
+          {usdPriceDai ? (usd * usdPriceDai).toFixed(2) : '-'}
+        </PriceItemValue>
       </PriceItem>
     </PriceWrapper>
   );
