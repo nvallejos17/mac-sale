@@ -49,7 +49,7 @@ const Price = ({ usd = 900 }) => {
       <PriceItem>
         <PriceItemLabel>ARS</PriceItemLabel>{' '}
         <PriceItemValue>
-          {usdPriceArs ? (usd * usdPriceArs).toFixed(2) : '-'}
+          {usdPriceArs ? (usd * usdPriceArs).toFixed(0) : '-'}
         </PriceItemValue>
       </PriceItem>
 
