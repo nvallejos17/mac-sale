@@ -19,27 +19,6 @@ const Faq = () => {
         </>
       ),
     },
-    {
-      header: 'Opciones de envío',
-      body: (
-        <>
-          <p>
-            Se realizan envíos únicamente a través de Mercado Envíos o cualquier
-            servicio de correo privado.
-          </p>
-          <p>Si elegís recibir el paquete por Mercado Envíos:</p>
-          <ul>
-            <li>Podés pagar únicamente en pesos por Mercado Pago</li>
-            <li>El envío es gratuito</li>
-            <li>El paquete viaja asegurado</li>
-          </ul>
-          <p>Si elegís recibir el paquete por correo privado:</p>
-          <ul>
-            <li>El costo del servicio queda a cargo del comprador</li>
-          </ul>
-        </>
-      ),
-    },
   ];
 
   return (

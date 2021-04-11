@@ -22,7 +22,7 @@ export const HeaderTitle = styled.h2`
 `;
 
 export const HeaderSubtitle = styled.h3`
-  margin: 0;
+  margin-bottom: 1.5rem;
 
   @media (max-width: 576px) {
     font-size: 1.5rem;
