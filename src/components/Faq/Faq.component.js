@@ -6,16 +6,39 @@ import Section from '../Section/Section.component';
 const Faq = () => {
   const faqItems = [
     {
-      header: 'Pregunta 1',
-      body: 'Respuesta 1',
+      header: 'Medios de pago',
+      body: (
+        <>
+          <p>Se aceptan únicamente medios de pago digitales:</p>
+          <ul>
+            <li>Transferencia bancaria en pesos</li>
+            <li>Transferencia bancaria en dólares</li>
+            <li>Mercado Pago</li>
+            <li>Buenbit</li>
+          </ul>
+        </>
+      ),
     },
     {
-      header: 'Pregunta 2',
-      body: 'Respuesta 2',
-    },
-    {
-      header: 'Pregunta 3',
-      body: 'Respuesta 3',
+      header: 'Opciones de envío',
+      body: (
+        <>
+          <p>
+            Se realizan envíos únicamente a través de Mercado Envíos o cualquier
+            servicio de correo privado.
+          </p>
+          <p>Si elegís recibir el paquete por Mercado Envíos:</p>
+          <ul>
+            <li>Podés pagar únicamente en pesos por Mercado Pago</li>
+            <li>El envío es gratuito</li>
+            <li>El paquete viaja asegurado</li>
+          </ul>
+          <p>Si elegís recibir el paquete por correo privado:</p>
+          <ul>
+            <li>El costo del servicio queda a cargo del comprador</li>
+          </ul>
+        </>
+      ),
     },
   ];
 

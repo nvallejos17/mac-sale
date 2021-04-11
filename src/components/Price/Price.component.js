@@ -18,7 +18,6 @@ const Price = ({ usd = 900 }) => {
         const {
           object: { daiars, daiusd },
         } = res.data;
-
         setArs(usd * (daiars.selling_price / daiusd.purchase_price));
         setDai(usd / daiusd.purchase_price);
       })
