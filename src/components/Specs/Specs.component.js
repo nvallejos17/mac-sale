@@ -1,4 +1,5 @@
 import React from 'react';
+import { isDev } from '../../constants/constants';
 import Section from '../Section/Section.component';
 import SpecItem from '../SpecItem/SpecItem.component';
 
@@ -293,7 +294,10 @@ const Specs = () => {
 
         <br />
 
-        <img src='mac-sale/img/in-the-box.png' alt='' />
+        <img
+          src={isDev ? 'mac-sale/img/in-the-box.png' : 'img/in-the-box.png'}
+          alt='in-the-box.png'
+        />
       </SpecItem>
     </Section>
   );
