@@ -1,8 +1,10 @@
 import styled from 'styled-components';
-import Button from 'react-bootstrap/Button';
 
-export const TopButtonWrapper = styled(Button)`
+export const FloatingGroupWrapper = styled.div`
   position: fixed;
   right: 1rem;
   bottom: 1rem;
+
+  display: flex;
+  flex-direction: column;
 `;
