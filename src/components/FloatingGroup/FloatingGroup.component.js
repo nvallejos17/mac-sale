@@ -19,10 +19,10 @@ const TopButton = () => {
           <i className='fas fa-chevron-up text-white'></i>
         </Button>
       )}
-
       <Button
         href='https://api.whatsapp.com/send?phone=5492944801363'
         target='_blank'
+        rel='noreferrer'
         variant='success'
       >
         <i className='fab fa-whatsapp'></i>
