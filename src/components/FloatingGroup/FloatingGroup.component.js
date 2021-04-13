@@ -16,7 +16,7 @@ const TopButton = () => {
     <FloatingGroupWrapper>
       {scrollY > 78 && (
         <Button className='mb-3' onClick={() => scroll.scrollToTop()}>
-          <i className='fas fa-chevron-up'></i>
+          <i className='fas fa-chevron-up text-white'></i>
         </Button>
       )}
 
