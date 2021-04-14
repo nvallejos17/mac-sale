@@ -1,7 +1,6 @@
 import React from 'react';
 import { isDev } from '../../constants/constants';
 import Section from '../Section/Section.component';
-import { GalleryCarousel } from './Gallery.styled';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 
@@ -28,13 +27,13 @@ const Gallery = () => {
 
   return (
     <Section title='Galería'>
-      <GalleryCarousel fade>
+      <Carousel fade>
         {images.map((img) => (
           <Carousel.Item key={img}>
             <Image src={isDev ? `mac-sale/${img}` : img} fluid />
           </Carousel.Item>
         ))}
-      </GalleryCarousel>
+      </Carousel>
     </Section>
   );
 };

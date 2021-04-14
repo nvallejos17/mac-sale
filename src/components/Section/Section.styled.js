@@ -24,7 +24,6 @@ export const SectionContainer = styled(Container)`
 
 export const SectionTitle = styled.h3`
   margin-bottom: 2rem;
-
   color: ${macGold};
 
   /* Mobile only */

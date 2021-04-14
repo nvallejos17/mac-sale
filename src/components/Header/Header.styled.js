@@ -5,7 +5,6 @@ import { macGold } from '../../theme/colors';
 export const HeaderJumbotron = styled(Jumbotron)`
   margin: 0;
   padding: 2rem;
-
   text-align: center;
 
   @media (max-width: 576px) {

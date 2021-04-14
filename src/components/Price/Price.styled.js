@@ -3,9 +3,7 @@ import styled from 'styled-components';
 export const PriceWrapper = styled.ul`
   margin: 0;
   padding: 0;
-
   display: flex;
-
   list-style-type: none;
 
   /* Mobile only */
