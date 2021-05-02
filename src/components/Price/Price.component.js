@@ -30,13 +30,11 @@ const Price = ({ usd = 800 }) => {
   }, []);
 
   const [usdPriceArs, setUsdPriceArs] = useState(null);
-  const [usdPriceDai, setUsdPriceDai] = useState(null);
 
   useEffect(() => {
     setUsdPriceArs(
       daiArs && daiUsd ? daiArs.selling_price / daiUsd.purchase_price : null
     );
-    setUsdPriceDai(daiUsd ? 1 / daiUsd.purchase_price : null);
   }, [daiArs, daiUsd]);
 
   return (
@@ -50,13 +48,6 @@ const Price = ({ usd = 800 }) => {
         <PriceItemLabel>ARS</PriceItemLabel>{' '}
         <PriceItemValue>
           {usdPriceArs ? (usd * usdPriceArs).toFixed(0) : '-'}
-        </PriceItemValue>
-      </PriceItem>
-
-      <PriceItem>
-        <PriceItemLabel>DAI</PriceItemLabel>{' '}
-        <PriceItemValue>
-          {usdPriceDai ? (usd * usdPriceDai).toFixed(2) : '-'}
         </PriceItemValue>
       </PriceItem>
     </PriceWrapper>

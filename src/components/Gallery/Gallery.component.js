@@ -20,9 +20,6 @@ const Gallery = () => {
     'img/carousel/12-min.jpg',
     'img/carousel/13-min.jpg',
     'img/carousel/14-min.jpg',
-    'img/carousel/15-min.jpeg',
-    'img/carousel/16-min.jpeg',
-    'img/carousel/17-min.jpeg',
   ];
 
   return (
