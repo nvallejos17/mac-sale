@@ -12,30 +12,20 @@ const Price = ({ usd = 800 }) => {
   const [daiUsd, setDaiUsd] = useState(null);
 
   useEffect(() => {
-    axios
-      .get('https://criptoya.com/api/buenbit/dai/ars')
-      .then((res) => {
-        const { bid: purchase_price, ask: selling_price } = res.data;
-        setDaiArs({ purchase_price, selling_price });
-      })
-      .catch(() => setDaiArs(null));
+    axios.get('https://criptoya.com/api/buenbit/dai/ars').then((res) => {
+      const { ask } = res.data;
+      setDaiArs(ask);
+    });
 
-    axios
-      .get('https://criptoya.com/api/buenbit/dai/usd')
-      .then((res) => {
-        const { bid: purchase_price, ask: selling_price } = res.data;
-        setDaiUsd({ purchase_price, selling_price });
-      })
-      .catch(() => setDaiUsd(null));
+    axios.get('https://criptoya.com/api/buenbit/dai/usd').then((res) => {
+      const { bid } = res.data;
+      setDaiUsd(bid);
+    });
   }, []);
 
-  const [usdPriceArs, setUsdPriceArs] = useState(null);
+  const [usdArs, setUsdArs] = useState(null);
 
-  useEffect(() => {
-    setUsdPriceArs(
-      daiArs && daiUsd ? daiArs.selling_price / daiUsd.purchase_price : null
-    );
-  }, [daiArs, daiUsd]);
+  useEffect(() => setUsdArs(daiArs / daiUsd), [daiArs, daiUsd]);
 
   return (
     <PriceWrapper>
@@ -47,7 +37,7 @@ const Price = ({ usd = 800 }) => {
       <PriceItem>
         <PriceItemLabel>ARS</PriceItemLabel>{' '}
         <PriceItemValue>
-          {usdPriceArs ? (usd * usdPriceArs).toFixed(0) : '-'}
+          {usdArs ? (usd * usdArs).toFixed(0) : '-'}
         </PriceItemValue>
       </PriceItem>
     </PriceWrapper>
