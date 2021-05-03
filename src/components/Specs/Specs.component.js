@@ -233,8 +233,8 @@ const Specs = () => {
 
         <p>
           Detrás de cada Mac está la potencia de macOS, su sistema operativo.
-          macOS Catalina tiene todo lo que te encanta de tu Mac y mucho más,
-          para que puedas hacer más cosas, y mejor.
+          macOS tiene todo lo que te encanta de tu Mac y mucho más, para que
+          puedas hacer más cosas, y mejor.
         </p>
 
         <p>
