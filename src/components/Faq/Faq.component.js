@@ -1,19 +1,22 @@
 import React from 'react';
 import Section from '../Section/Section.component';
 import Accordion from 'react-bootstrap/Accordion';
-import Card from 'react-bootstrap/Card';
+import FaqItem from '../FaqItem/FaqItem.component';
 
 const Faq = () => {
   const faqItems = [
     {
+      eventKey: '1',
       question: 'Question 1',
       answer: 'Answer 1',
     },
     {
+      eventKey: '2',
       question: 'Question 2',
       answer: 'Answer 2',
     },
     {
+      eventKey: '3',
       question: 'Question 3',
       answer: 'Answer 3',
     },
@@ -22,15 +25,8 @@ const Faq = () => {
   return (
     <Section title='Preguntas frecuentes'>
       <Accordion>
-        {faqItems.map(({ question, answer }, index) => (
-          <Card id={index}>
-            <Accordion.Toggle as={Card.Header} eventKey={index.toString()}>
-              {question}
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey={index.toString()}>
-              <Card.Body>{answer}</Card.Body>
-            </Accordion.Collapse>
-          </Card>
+        {faqItems.map((faqItem) => (
+          <FaqItem key={faqItem.eventKey} faqItem={faqItem} />
         ))}
       </Accordion>
     </Section>
