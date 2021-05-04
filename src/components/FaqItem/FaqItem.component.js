@@ -1,12 +1,8 @@
 import React from 'react';
-import { v4 as uuid } from 'uuid';
 import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
 
-const FaqItem = ({ faqItem }) => {
-  const { question, answer } = faqItem;
-  const eventKey = uuid();
-
+const FaqItem = ({ eventKey, question, answer }) => {
   return (
     <Card>
       <Accordion.Toggle

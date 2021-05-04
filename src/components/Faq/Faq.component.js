@@ -6,24 +6,21 @@ import FaqItem from '../FaqItem/FaqItem.component';
 const Faq = () => {
   const faqItems = [
     {
-      question: 'Question 1',
-      answer: 'Answer 1',
-    },
-    {
-      question: 'Question 2',
-      answer: 'Answer 2',
-    },
-    {
-      question: 'Question 3',
-      answer: 'Answer 3',
+      question: 'Medios de pago',
+      answer: 'Se aceptan únicamente medios de pago digitales.',
     },
   ];
 
   return (
     <Section title='Preguntas frecuentes'>
       <Accordion>
-        {faqItems.map((faqItem, index) => (
-          <FaqItem key={index} faqItem={faqItem} />
+        {faqItems.map(({ question, answer }, index) => (
+          <FaqItem
+            key={index}
+            eventKey={index.toString()}
+            question={question}
+            answer={answer}
+          />
         ))}
       </Accordion>
     </Section>
