@@ -16,6 +16,7 @@
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
     "styled-components": "^5.2.2",
+    "uuid": "^8.3.2",
     "web-vitals": "^1.1.1"
   },
   "homepage": "https://nvallejos17.github.io/mac-sale",
