@@ -1,7 +1,7 @@
 import styled from 'styled-components';
+import { macGold } from '../../theme/colors';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { macGold } from '../../theme/colors';
 
 export const SpecItemRow = styled(Row)`
   * {

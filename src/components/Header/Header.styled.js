@@ -30,6 +30,7 @@ export const HeaderSubtitle = styled.h3`
 `;
 
 export const HeaderPrice = styled(Badge)`
+  margin-bottom: 0.75rem;
   font-size: 2rem;
   font-weight: normal;
 `;
