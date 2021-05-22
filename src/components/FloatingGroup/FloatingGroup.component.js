@@ -3,7 +3,7 @@ import { animateScroll as scroll } from 'react-scroll';
 import { FloatingGroupWrapper } from './FloatingGroup.styled';
 import Button from 'react-bootstrap/Button';
 
-const TopButton = () => {
+const FloatingGroup = () => {
   const [scrollY, setscrollY] = useState(window.scrollY);
 
   useEffect(() => {
@@ -31,4 +31,4 @@ const TopButton = () => {
   );
 };
 
-export default TopButton;
+export default FloatingGroup;

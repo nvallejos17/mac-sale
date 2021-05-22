@@ -1,11 +1,6 @@
 import React from 'react';
 import Section from '../Section/Section.component';
-import {
-  HeaderJumbotron,
-  HeaderTitle,
-  HeaderSubtitle,
-  HeaderPrice,
-} from './Header.styled';
+import { HeaderJumbotron, HeaderTitle, HeaderSubtitle } from './Header.styled';
 
 const Header = () => {
   return (
@@ -13,7 +8,6 @@ const Header = () => {
       <HeaderJumbotron>
         <HeaderTitle>MacBook Air</HeaderTitle>
         <HeaderSubtitle>(Retina, 13 pulgadas, 2019)</HeaderSubtitle>
-        <HeaderPrice variant='success'>USD 790</HeaderPrice>
       </HeaderJumbotron>
     </Section>
   );
