@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import Badge from 'react-bootstrap/Badge';
 import { macGold } from '../../theme/colors';
 
 export const HeaderJumbotron = styled(Jumbotron)`
@@ -23,5 +24,15 @@ export const HeaderTitle = styled.h2`
 export const HeaderSubtitle = styled.h3`
   @media (max-width: 576px) {
     font-size: 1.5rem;
+  }
+`;
+
+export const HeaderPrice = styled(Badge)`
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+
+  @media (max-width: 576px) {
+    font-size: 1.25rem;
   }
 `;
