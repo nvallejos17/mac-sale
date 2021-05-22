@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
+import useRates from '../../hooks/useRates.hook';
 import {
   PriceWrapper,
   PriceItem,
@@ -8,24 +8,7 @@ import {
 } from './Price.styled';
 
 const Price = ({ usd = 790 }) => {
-  const [daiArs, setDaiArs] = useState(null);
-  const [daiUsd, setDaiUsd] = useState(null);
-
-  useEffect(() => {
-    axios.get('https://criptoya.com/api/buenbit/dai/ars').then((res) => {
-      const { ask } = res.data;
-      setDaiArs(ask);
-    });
-
-    axios.get('https://criptoya.com/api/buenbit/dai/usd').then((res) => {
-      const { bid } = res.data;
-      setDaiUsd(bid);
-    });
-  }, []);
-
-  const [usdArs, setUsdArs] = useState(null);
-
-  useEffect(() => setUsdArs(daiArs / daiUsd), [daiArs, daiUsd]);
+  const { usdArs } = useRates();
 
   return (
     <PriceWrapper>
