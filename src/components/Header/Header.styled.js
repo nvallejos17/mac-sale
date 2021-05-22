@@ -22,13 +22,14 @@ export const HeaderTitle = styled.h2`
 `;
 
 export const HeaderSubtitle = styled.h3`
+  margin-bottom: 2rem;
+
   @media (max-width: 576px) {
     font-size: 1.5rem;
   }
 `;
 
 export const HeaderPrice = styled(Badge)`
-  margin-top: 1rem;
   font-size: 1.5rem;
   font-weight: normal;
 
