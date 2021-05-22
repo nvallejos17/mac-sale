@@ -7,7 +7,7 @@ import {
   PriceItemValue,
 } from './Price.styled';
 
-const Price = ({ usd = 800 }) => {
+const Price = ({ usd = 790 }) => {
   const [daiArs, setDaiArs] = useState(null);
   const [daiUsd, setDaiUsd] = useState(null);
 
