@@ -6,6 +6,7 @@ import {
   HeaderTitle,
   HeaderSubtitle,
   HeaderPrice,
+  HeaderPriceContainer,
 } from './Header.styled';
 
 const Header = () => {
@@ -14,7 +15,9 @@ const Header = () => {
       <HeaderJumbotron>
         <HeaderTitle>MacBook Air</HeaderTitle>
         <HeaderSubtitle>(Retina, 13 pulgadas, 2019)</HeaderSubtitle>
-        <HeaderPrice variant='success'>USD 790</HeaderPrice>
+        <HeaderPriceContainer>
+          <HeaderPrice variant='success'>USD 790</HeaderPrice>
+        </HeaderPriceContainer>
         <Rates />
       </HeaderJumbotron>
     </Section>
