@@ -1,4 +1,5 @@
 import React from 'react';
+import useRates from '../../hooks/useRates.hook';
 import Rates from '../Rates/Rates.component';
 import Section from '../Section/Section.component';
 import {
@@ -10,6 +11,8 @@ import {
 } from './Header.styled';
 
 const Header = () => {
+  const { usdArs } = useRates();
+
   return (
     <Section>
       <HeaderJumbotron>
@@ -18,7 +21,7 @@ const Header = () => {
         <HeaderPriceContainer>
           <HeaderPrice variant='success'>USD 790</HeaderPrice>
         </HeaderPriceContainer>
-        <Rates />
+        {usdArs && !isNaN(usdArs) && <Rates value={usdArs} />}
       </HeaderJumbotron>
     </Section>
   );

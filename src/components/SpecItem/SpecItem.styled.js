@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { mobileBreakpoint } from '../../constants/constants';
 import { macGold } from '../../theme/colors';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -26,7 +27,7 @@ export const SpecItemRow = styled(Row)`
     border-bottom: 0;
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: ${mobileBreakpoint}px) {
     padding: 0;
     border-bottom: none;
   }
@@ -63,7 +64,7 @@ export const SpecItemContent = styled(Col)`
     display: block;
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: ${mobileBreakpoint}px) {
     padding: 1rem 0;
   }
 `;
@@ -73,7 +74,7 @@ export const SpecItemTitle = styled(Col)`
     padding-right: 2rem;
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: ${mobileBreakpoint}px) {
     padding: 1rem;
     border-bottom: 1px solid ${macGold};
 
